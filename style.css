@@ -1,0 +1,10 @@
+body {
+  background-color: darkslategray;
+  color: antiquewhite;
+}
+.known {
+  color: greenyellow;
+}
+.unknown {
+  color: tomato;
+}
