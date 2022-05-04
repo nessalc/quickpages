@@ -1,6 +1,6 @@
 ---
 layout: post
-title: reproductive freedom
+title: Reproductive Freedom
 date: 2022-05-04 14:54:37 -0500
 tags:
 - politics

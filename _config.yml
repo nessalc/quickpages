@@ -4,3 +4,4 @@ encoding: utf-8
 title: Take ℵ₀
 description: Random opinions from another nerd
 theme: jekyll-theme-midnight
+baseurl: /quickpages
