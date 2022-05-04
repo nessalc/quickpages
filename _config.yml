@@ -3,4 +3,9 @@ timezone: America/Chicago
 encoding: utf-8
 title: Take ℵ₀
 description: Random opinions from another nerd
+<<<<<<< HEAD
 theme: jekyll-theme-midnight
+=======
+
+theme: jekyll-theme-midnight
+>>>>>>> f0b3ea3c6121b653e74bb09c357f99afc6a906bf
