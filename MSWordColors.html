@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table,td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+      text-align: center;
+    }
+  </style>
+  <title>MS Word Colors</title>
+</head>
+<body>
+  <h1>MS Word Colors</h1>
+  <p>Microsoft Word isn't always straightforward with its colors when it 
+    comes to examining them in code. In fact, if you pick the "wrong" color, 
+    it can be downright confusing. So I put together this guide. This may or 
+    may not apply to other Office products; I haven't confirmed that at the 
+    time of writing.</p>
+  <p>The "problem" seems down to the Theme colors, which it makes easy to
+    choose, especially in shading the cells of tables. One nice feature of 
+    this is that you can change the theme colors and, like CSS stylesheets,
+    it affects all documents that use theme colors.</p>
+  <p>The table below is constructed from the default theme that comes
+    "out-of-the-box" with Word, or what it resets to if you wipe your
+    Normal.dotm file. 60/70 of these colors may differ if you change the
+    theme or alter the color scheme.</p>
+  <p>The first line of each entry in the table is the "name" of the color 
+    in the drop-down color picker. The second is what you get if you ask
+    for the "value" of that color. wdColor is supposed to be a 24-bit color,
+    at least, <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.word.shading.backgroundpatterncolor?view=word-pia">sort of</a>.
+    The third line is the associated HTML RGB color.
+  </p>
+  <p>It's worth noting that, because of <a href="https://en.wikipedia.org/wiki/Endianness">endianness</a>, the RGB values in the last line are the reverse of the bytes from the second line.</p>
+  <table>
+    <tr>
+      <td style="background:#FFFFFF;">White, Background 1<br />DC00FFFF<br />#FFFFFF</td>
+      <td style="background:#000000;color:#ffffff;">Black, Text 1<br />DD00FFFF<br />#000000</td>
+      <td style="background:#E7E6E6;">Light Gray, Background 2<br />DE00FFFF<br />#E7E6E6</td>
+      <td style="background:#44546A;color:#ffffff;">Blue-Gray, Text 2<br />DF00FFFF<br />#44546A</td>
+      <td style="background:#4472C4;color:#ffffff;">Blue, Accent 1<br />D400FFFF<br />#4472C4</td>
+      <td style="background:#ED7D31;">Orange, Accent 2<br />D500FFFF<br />#ED7D31</td>
+      <td style="background:#A5A5A5;">Gray, Accent 3<br />D600FFFF<br />#A5A5A5</td>
+      <td style="background:#FFC000;">Gold, Accent 4<br />D700FFFF<br />#FFC000</td>
+      <td style="background:#5B9BD5;">Blue, Accent 5<br />D800FFFF<br />#5B9BD5</td>
+      <td style="background:#70AD47;">Green, Accent 6<br />D900FFFF<br />#70AD47</td>
+    </tr>
+    <tr>
+      <td style="background:#F2F2F2;">White, Background 1, Darker 5%<br />DC00F2FF<br />#F2F2F2</td>
+      <td style="background:#7F7F7F;color:#ffffff;">Black, Text 1, Lighter 50%<br />DD00FF80<br />#7F7F7F</td>
+      <td style="background:#D0CECE;">Light Gray, Background 2, Darker 10%<br />DE00E6FF<br />#D0CECE</td>
+      <td style="background:#D5DCE4;">Blue-Gray, Text 2, Lighter 80%<br />DF00FF33<br />#D5DCE4</td>
+      <td style="background:#D9E2F3;">Blue, Accent 1, Lighter 80%<br />D400FF33<br />#D9E2F3</td>
+      <td style="background:#FBE4D5;">Orange, Accent 2, Lighter 80%<br />D500FF33<br />#FBE4D5</td>
+      <td style="background:#EDEDED;">Gray, Accent 3, Lighter 80%<br />D600FF33<br />#EDEDED</td>
+      <td style="background:#FFF2CC;">Gold, Accent 4, Lighter 80%<br />D700FF33<br />#FFF2CC</td>
+      <td style="background:#DEEAF6;">Blue, Accent 5, Lighter 80%<br />D800FF33<br />#DEEAF6</td>
+      <td style="background:#E2EFD9;">Green, Accent 6, Lighter 80%<br />D900FF33<br />#E2EFD9</td>
+    </tr>
+    <tr>
+      <td style="background:#D9D9D9;">White, Background 1, Darker 15%<br />DC00D9FF<br />#D9D9D9</td>
+      <td style="background:#595959;color:#ffffff;">Black, Text 1, Lighter 35%<br />DD00FFA6<br />#595959</td>
+      <td style="background:#AEAAAA;">Light Gray, Background 2, Darker 25%<br />DE00BFFF<br />#AEAAAA</td>
+      <td style="background:#ACB9CA;">Blue-Gray, Text 2, Lighter 60%<br />DF00FF66<br />#ACB9CA</td>
+      <td style="background:#B4C6E7;">Blue, Accent 1, Lighter 60%<br />D400FF66<br />#B4C6E7</td>
+      <td style="background:#F7CAAC;">Orange, Accent 2, Lighter 60%<br />D500FF66<br />#F7CAAC</td>
+      <td style="background:#DBDBDB;">Gray, Accent 3, Lighter 60%<br />D600FF66<br />#DBDBDB</td>
+      <td style="background:#FFE599;">Gold, Accent 4, Lighter 60%<br />D700FF66<br />#FFE599</td>
+      <td style="background:#BDD6EE;">Blue, Accent 5, Lighter 60%<br />D800FF66<br />#BDD6EE</td>
+      <td style="background:#C5E0B3;">Green, Accent 6, Lighter 60%<br />D900FF66<br />#C5E0B3</td>
+    </tr>
+    <tr>
+      <td style="background:#BFBFBF;">White, Background 1, Darker 25%<br />DC00BFFF<br />#BFBFBF</td>
+      <td style="background:#404040;color:#ffffff;">Black, Text 1, Lighter 25%<br />DD00FFBF<br />#404040</td>
+      <td style="background:#767171;color:#ffffff;">Light Gray, Background 2, Darker 50%<br />DE0080FF<br />#767171</td>
+      <td style="background:#8496B0;">Blue-Gray, Text 2, Lighter 40%<br />DF00FF99<br />#8496B0</td>
+      <td style="background:#8EAADB;">Blue, Accent 1, Lighter 40%<br />D400FF99<br />#8EAADB</td>
+      <td style="background:#F4B083;">Orange, Accent 2, Lighter 40%<br />D500FF99<br />#F4B083</td>
+      <td style="background:#C9C9C9;">Gray, Accent 3, Lighter 40%<br />D600FF99<br />#C9C9C9</td>
+      <td style="background:#FFD966;">Gold, Accent 4, Lighter 40%<br />D700FF99<br />#FFD966</td>
+      <td style="background:#9CC2E5;">Blue, Accent 5, Lighter 40%<br />D800FF99<br />#9CC2E5</td>
+      <td style="background:#A8D08D;">Green, Accent 6, Lighter 40%<br />D900FF99<br />#A8D08D</td>
+    </tr>
+    <tr>
+      <td style="background:#A6A6A6;">White, Background 1, Darker 35%<br />DC00A6FF<br />#A6A6A6</td>
+      <td style="background:#262626;color:#ffffff;">Black, Text 1, Lighter 15%<br />DD00FFD9<br />#262626</td>
+      <td style="background:#3B3838;color:#ffffff;">Light Gray, Background 2, Darker 75%<br />DE0040FF<br />#3B3838</td>
+      <td style="background:#323E4F;color:#ffffff;">Blue-Gray, Text 2, Darker 25%<br />DF00BFFF<br />#323E4F</td>
+      <td style="background:#2F5496;color:#ffffff;">Blue, Accent 1, Darker 25%<br />D400BFFF<br />#2F5496</td>
+      <td style="background:#C45911;">Orange, Accent 2, Darker 25%<br />D500BFFF<br />#C45911</td>
+      <td style="background:#7B7B7B;">Gray, Accent 3, Darker 25%<br />D600BFFF<br />#7B7B7B</td>
+      <td style="background:#BF8F00;">Gold, Accent 4, Darker 25%<br />D700BFFF<br />#BF8F00</td>
+      <td style="background:#2E74B5;">Blue, Accent 5, Darker 25%<br />D800BFFF<br />#2E74B5</td>
+      <td style="background:#538135;">Green, Accent 6, Darker 25%<br />D900BFFF<br />#538135</td>
+    </tr>
+    <tr>
+      <td style="background:#808080;">White, Background 1, Darker 50%<br />DC0080FF<br />#808080</td>
+      <td style="background:#0D0D0D;color:#ffffff;">Black, Text 1, Lighter 5%<br />DD00FFF2<br />#0D0D0D</td>
+      <td style="background:#171717;color:#ffffff;">Light Gray, Background 2, Darker 90%<br />DE001AFF<br />#171717</td>
+      <td style="background:#222A35;color:#ffffff;">Blue-Gray, Text 2, Darker 50%<br />DF0080FF<br />#222A35</td>
+      <td style="background:#1F3864;color:#ffffff;">Blue, Accent 1, Darker 50%<br />D40080FF<br />#1F3864</td>
+      <td style="background:#833C0B;color:#ffffff;">Orange, Accent 2, Darker 50%<br />D50080FF<br />#833C0B</td>
+      <td style="background:#525252;color:#ffffff;">Gray, Accent 3, Darker 50%<br />D60080FF<br />#525252</td>
+      <td style="background:#806000;color:#ffffff;">Gold, Accent 4, Darker 50%<br />D70080FF<br />#806000</td>
+      <td style="background:#1F4E79;color:#ffffff;">Blue, Accent 5, Darker 50%<br />D80080FF<br />#1F4E79</td>
+      <td style="background:#385623;color:#ffffff;">Green, Accent 6, Darker 50%<br />D90080FF<br />#385623</td>
+    </tr>
+    <tr>
+      <td style="background:#C00000;color:#ffffff;">Dark Red<br />000000C0<br />#C00000</td>
+      <td style="background:#FF0000;">Red<br />000000FF<br />#FF0000</td>
+      <td style="background:#FFC000;">Orange<br />0000C0FF<br />#FFC000</td>
+      <td style="background:#FFFF00;">Yellow<br />0000FFFF<br />#FFFF00</td>
+      <td style="background:#92D050;">Light Green<br />0050D092<br />#92D050</td>
+      <td style="background:#00B050;">Green<br />0050B000<br />#00B050</td>
+      <td style="background:#00B0F0;">Light Blue<br />00F0B000<br />#00B0F0</td>
+      <td style="background:#0070C0;color:#ffffff;">Blue<br />00C07000<br />#0070C0</td>
+      <td style="background:#002060;color:#ffffff;">Dark Blue<br />00602000<br />#002060</td>
+      <td style="background:#7030A0;color:#ffffff;">Purple<br />00A03070<br />#7030A0</td>
+    </tr>
+  </table>
+  <p>It took me quite some time to find this <a href="http://www.wordarticles.com/Articles/Colours/2007.php">article</a>
+    and even longer to convert the VBA code to C#, but I present some of it
+    here. The resulting wdColor values my code calculates may differ by as
+    much as three bits from Word's native code, one for each color in either
+    direction due to rounding.</p>
+</body>
+</html>
