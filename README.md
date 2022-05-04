@@ -1,8 +1,8 @@
 # Quickpages
 
-A quick way for me to publish static web pages. By default GitHub Pages use Jekyll, but I didn't feel like doing that, so I told it not to.
+A quick way for me to publish static web pages. I decided to switch things to Jekyll, but a couple of pages I created beforehand I left alone.
 
-So here's the "full" index of the pages I've created so far. They may or may not work, and they're almost certainly not "complete" in any sense of that word.
+I will probably use this as a blog for a bit unless or until I come up with something else. Long ago I lost track of the number of blogs I've set up and subsequently lost due to hard drive crashes, forgetting to back it up before the ol' `fdisk format reinstall` dance, and random server mishaps or misconfigurations. So my title is "Take ℵ₀" as just a tad hyperbolic.
 
 - [Index](index.html)
   - an index of pages (much like this)
