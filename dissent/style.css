@@ -1,0 +1,35 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color:#eeeeee;
+  }
+  a {
+    color:#809fff;
+  }
+}
+@media (prefers-color-scheme: light) {
+}
+body {
+  width:60%;
+  margin: 0 auto;
+  text-justify:inter-word;
+  text-align: justify;
+}
+table,th,td {
+  border:1px solid;
+}
+table {
+  border-collapse: collapse;
+}
+th,td {
+  padding: 0.25rem;
+}
+dt {
+  font-weight: bold;
+}
+dt::after {
+  content: ":";
+}
+dd {
+  margin-left: 1.5rem;
+}
